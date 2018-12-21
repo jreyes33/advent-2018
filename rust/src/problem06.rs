@@ -33,7 +33,7 @@ impl Point {
 }
 
 fn parse_input() -> Result<Vec<Point>, Box<Error>> {
-    let buf_reader = BufReader::new(File::open("../06-input.txt")?);
+    let buf_reader = BufReader::new(File::open("../inputs/06-input.txt")?);
     let lines: Vec<_> = buf_reader.lines().flatten().collect();
     let mut points = vec![];
     for line in lines {

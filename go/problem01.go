@@ -9,7 +9,7 @@ import (
 )
 
 func parseInput() []int {
-	file, err := os.Open("../01-input.txt")
+	file, err := os.Open("../inputs/01-input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

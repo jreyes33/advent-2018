@@ -5,7 +5,7 @@ use std::io::prelude::*;
 use std::io::BufReader;
 
 fn parse_input() -> Result<Vec<i32>, Box<Error>> {
-    let buf_reader = BufReader::new(File::open("../01-input.txt")?);
+    let buf_reader = BufReader::new(File::open("../inputs/01-input.txt")?);
     // Commented this out because of ugly double unwrap
     // let numbers = buf_reader
     //     .lines()

@@ -39,7 +39,7 @@ fn more_than_x_claims(max: u16, point: &Point, claims: &[Claim]) -> bool {
 }
 
 fn parse_input() -> Result<Vec<Claim>, Box<Error>> {
-    let buf_reader = BufReader::new(File::open("../03-input.txt")?);
+    let buf_reader = BufReader::new(File::open("../inputs/03-input.txt")?);
     let lines: Vec<_> = buf_reader.lines().flatten().collect();
     let mut claims = vec![];
     for line in lines {

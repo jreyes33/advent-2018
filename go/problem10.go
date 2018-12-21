@@ -69,7 +69,7 @@ func convert(text *string) int {
 }
 
 func parseInput() []Light {
-	file, err := os.Open("../10-input.txt")
+	file, err := os.Open("../inputs/10-input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

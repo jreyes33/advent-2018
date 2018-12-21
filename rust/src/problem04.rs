@@ -36,7 +36,7 @@ impl Guard {
 type SleepRecords = HashMap<u32, Guard>;
 
 fn parse_input() -> Result<SleepRecords, Box<Error>> {
-    let buf_reader = BufReader::new(File::open("../04-input.txt")?);
+    let buf_reader = BufReader::new(File::open("../inputs/04-input.txt")?);
     let mut lines: Vec<_> = buf_reader.lines().flatten().collect();
     lines.sort();
     let mut id = 0;

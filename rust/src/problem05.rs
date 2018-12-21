@@ -6,7 +6,7 @@ type Polymer = Vec<char>;
 
 fn parse_input() -> Result<Polymer, Box<Error>> {
     let mut contents = String::new();
-    File::open("../05-input.txt")?.read_to_string(&mut contents)?;
+    File::open("../inputs/05-input.txt")?.read_to_string(&mut contents)?;
     Ok(contents.trim().chars().collect())
 }
 

@@ -5,7 +5,7 @@ use std::io::prelude::*;
 use std::io::BufReader;
 
 fn parse_input() -> Result<Vec<String>, Box<Error>> {
-    let buf_reader = BufReader::new(File::open("../02-input.txt")?);
+    let buf_reader = BufReader::new(File::open("../inputs/02-input.txt")?);
     let lines = buf_reader.lines().flatten().collect();
     Ok(lines)
 }

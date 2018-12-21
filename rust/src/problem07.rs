@@ -49,7 +49,7 @@ impl Worker {
 }
 
 fn parse_input() -> Result<HashMap<char, Step>, Box<Error>> {
-    let buf_reader = BufReader::new(File::open("../07-input.txt")?);
+    let buf_reader = BufReader::new(File::open("../inputs/07-input.txt")?);
     let mut steps = HashMap::new();
     for line in buf_reader.lines().flatten() {
         let mut chars = line.chars();

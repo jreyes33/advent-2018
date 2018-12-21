@@ -89,7 +89,7 @@ struct Marble {
 
 fn parse_input() -> Result<Settings, Box<Error>> {
     let mut contents = String::new();
-    File::open("../09-input.txt")?.read_to_string(&mut contents)?;
+    File::open("../inputs/09-input.txt")?.read_to_string(&mut contents)?;
     let mut split = contents.split(' ');
     let player_count = split.nth(0).ok_or("failed parsing players")?.parse()?;
     let last_marble = split.nth(5).ok_or("failed parsing last marble")?.parse()?;

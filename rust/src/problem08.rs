@@ -38,7 +38,7 @@ impl Node {
 
 fn parse_input() -> Result<Node, Box<Error>> {
     let mut contents = String::new();
-    File::open("../08-input.txt")?.read_to_string(&mut contents)?;
+    File::open("../inputs/08-input.txt")?.read_to_string(&mut contents)?;
     let mut input_iter = contents
         .trim()
         .split(' ')
