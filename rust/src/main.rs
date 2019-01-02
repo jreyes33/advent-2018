@@ -11,6 +11,7 @@ mod problem06;
 mod problem07;
 mod problem08;
 mod problem09;
+mod problem12;
 
 fn main() -> Result<(), Box<Error>> {
     let problem: u8 = env::args()
@@ -53,6 +54,10 @@ fn main() -> Result<(), Box<Error>> {
         9 => {
             println!("{}", problem09::part1()?);
             println!("{}", problem09::part2()?);
+        }
+        12 => {
+            println!("{}", problem12::part1()?);
+            println!("{}", problem12::part2()?);
         }
         _ => {
             println!("No such problem: {}", problem);
